@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Themes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #b1194c;
+        }
+        #themes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .theme-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            flex-basis: calc(33% - 40px); /* Adjusts width based on margin */
+            transition: transform 0.2s;
+        }
+        .theme-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .theme-card h2 {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+            color: #b1194c;
+        }
+        .theme-card p {
+            color: #666;
+        }
+        .theme-card:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            .theme-card {
+                flex-basis: calc(100% - 40px); /* Full width on smaller screens */
+            }
+    }
+    .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 10%;
+            height: 10%;
+    }
+    .nav-button {
+        padding: 10px 20px;
+        background-color: #d8a4ee;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.2s;
+    }
+    .nav-button:hover {
+        background-color: #512E5F;
+    }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Birthday Themes</h1>
+    <section id="themes">
+        <div class="theme-card">
+            <img src="tI5.html.jpeg" alt="Superhero Theme">
+            <h2>Superhero Theme</h2>
+            <p>Bring your favorite superheroes to life with exciting decorations and activities.</p>
+        </div>
+        <div class="theme-card">
+            <img src="A2.html.jpeg" alt="Princess Theme">
+            <h2>Princess Theme</h2>
+            <p>A magical experience with enchanting decorations fit for royalty.</p>
+        </div>
+        <div class="theme-card">
+            <img src="beach1.jpeg" alt="Beach Theme">
+            <h2>Beach Theme</h2>
+            <p>Bring the ocean breeze to your party with our coastal-inspired decor and tropical vibes.</p>
+          </div>
+          
+          <div class="theme-card">
+            <img src="tO.html.jpeg" alt="Outdoor Theme">
+            <h2>Outdoor Theme</h2>
+            <p>Connect with nature and celebrate under the stars with our rustic and earthy outdoor setting.</p>
+          </div>
+          
+    </section>
+    <div class="navigation-buttons">
+        <a href="venue-decoaration.html" class="nav-button">Previous</a>
+        <a href="invitations.html" class="nav-button">Next</a>
+    </div>
+</div>
+
+</body>
+</html>

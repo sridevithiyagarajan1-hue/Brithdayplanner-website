@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue Decoration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #b1194c;
+        }
+        #services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            flex-basis: calc(33% - 40px); /* Adjusts width based on margin */
+            transition: transform 0.2s;
+        }
+        .service-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .service-card h2 {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+            color: #b1194c;
+        }
+        .service-card p {
+            color: #666;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            .service-card {
+                flex-basis: calc(100% - 40px); /* Full width on smaller screens */
+            }
+        }
+    .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 10%;
+            height: 10%;
+    }
+    .nav-button {
+        padding: 10px 20px;
+        background-color: #d8a4ee;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.2s;
+    }
+    .nav-button:hover {
+        background-color: #512E5F;
+    }
+    
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Venue Decoration Services</h1>
+    <section id="services">
+        <div class="service-card">
+            <img src="beach2.jpeg" alt="Balloon Decoration">
+            <h2>Balloon Decoration</h2>
+            <p>Colorful balloon arrangements that bring the venue to life.</p>
+        </div>
+        <div class="service-card">
+            <img src="fl.html.jpeg" alt="Flower Arrangement">
+            <h2>Flower Arrangement</h2>
+            <p>Elegant floral designs to enhance the beauty of the event.</p>
+        </div>
+        <div class="service-card">
+            <img src="customize.html.jpeg" alt="Customized Decoration">
+            <h2>Customized Decoration</h2>
+            <p>Personalized decor to match your theme and style.</p>
+        </div>
+        <div class="service-card">
+            <img src="tO1.html.jpeg" alt="Customized Decoration">
+            <h2>indoor decorations</h2>
+            <p>Personalized decor to match your theme and style.</p>
+        </div>
+    <div class="navigation-buttons">
+        <a href="services.html" class="nav-button">Previous</a>
+        <a href="themes.html" class="nav-button">Next</a>
+    </div>
+</div>
+
+</body>
+</html>
+

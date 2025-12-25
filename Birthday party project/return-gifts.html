@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Gifts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eee;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #7D3C98; /* Violet color for header */
+        }
+        #gifts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .gift-card {
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            flex-basis: calc(33% - 40px);
+            transition: transform 0.2s;
+            color: #333;
+        }
+        .gift-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .gift-card h2 {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+            color: #512E5F; /* Dark purple */
+        }
+        .gift-card p {
+            color: #444;
+        }
+        .gift-card:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            .gift-card {
+                flex-basis: calc(100% - 40px);
+            }
+    }
+    .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 10%;
+            height: 10%;
+    }
+    .nav-button {
+        padding: 10px 20px;
+        background-color: #d8a4ee;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.2s;
+    }
+    .nav-button:hover {
+        background-color: #512E5F;
+    }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Return Gifts</h1>
+    <section id="gifts">
+        <div class="gift-card">
+            <img src="plant.html.jpeg" alt="Mini Plants">
+            <h2>Mini Plants</h2>
+            <p>Eco-friendly gift with small potted plants for guests to take home.</p>
+        </div>
+        <div class="gift-card">
+            <img src="Rgifts1.html.jpeg" alt="Art Kit">
+            <h2>kit</h2>
+            <p>A creative kit with colors and crafts for art enthusiasts.</p>
+        </div>
+        <div class="gift-card">
+            <img src="Rgifts.html.jpeg" alt="bags">
+            <h2>thank-you bags</h2>
+            <p>Personalized thank-you bags to remind guests of the special occasion.</p>
+        </div>
+        <div class="gift-card">
+            <img src="Rcard2.jpeg" alt="Thank You Image">
+            <p>Thank you for being an incredible support system; I'm truly grateful!</p>
+          </div>
+        
+    </section>
+    <div class="navigation-buttons">
+        <a href="entertainment-shows.html" class="nav-button">Previous</a>
+        <a href="services.html" class="nav-button">Next</a>
+    </div>
+</div>
+
+</body>
+</html>

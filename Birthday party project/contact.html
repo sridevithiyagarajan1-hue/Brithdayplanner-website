@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+  <style>
+        /* Basic page layout */
+        .container {
+            display: flex;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            /* background-color: #f9f9f9; */
+            background: url('c-bg.html.jpeg') no-repeat;
+            background-size: cover;
+            color: #333; /* Font color for better readability */
+        }
+
+        .image-section {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .form-section {
+            flex: 1.5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #b1194c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #a01744;
+        }
+
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Contact Details */
+        .contact-details {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Popup Message */
+        .popup-message {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            text-align: center;
+            z-index: 10;
+        }
+
+        /* Overlay for popup */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">CONTACT FORM</h1>
+<div class="container">
+    <div class="image-section">
+        <img src="c-img.html.jpeg" alt="Service Image">
+    </div>
+
+    <div class="form-section">
+        <form id="serviceForm" onsubmit="return validateForm()">
+            <h2>contact</h2>
+
+            <!-- Name -->
+            <label for="name">Name <span style="color: red;">*</span></label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number <span style="color: red;">*</span></label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Enter 10 digit phone number">
+
+            <!-- Email ID -->
+            <label for="email">Email <span style="color: red;">*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- WhatsApp Number -->
+            <label for="whatsapp">WhatsApp Number <span style="color: red;">*</span></label>
+            <input type="tel" id="whatsapp" name="whatsapp" pattern="[0-9]{10}" required placeholder="Enter 10 digit WhatsApp number">
+
+            <!-- Message -->
+            <label for="message">Message <span style="color: red;">*</span></label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Contact Details -->
+        <div class="contact-details">
+            <h2>Contact Us</h2>
+            <p>Contact Number: 6543227898 or 9876123450</p>
+            <p>Email ID: <a href="mailto:bestbirthdayplanners1@gmail.com">bestbirthdayplanners1@gmail.com</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="nav-buttons">
+    <button onclick="goToPreviousPage()">Previous Page</button>
+    <button onclick="goToNextPage()">Next Page</button>
+</div>
+
+<!-- Popup and Overlay for Confirmation -->
+<div id="popup" class="popup-message">
+    Management will call you soon!
+    <br><br>
+    <button onclick="closePopup()">ok</button>
+</div>
+<div id="overlay" class="overlay"></div>
+<script>
+    
+    // contact-form validation
+    function validateForm() {
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const email = document.getElementById("email").value;
+      const whatsapp = document.getElementById("whatsapp").value;
+      const message = document.getElementById("message").value;
+      
+      if (name && phone && email && whatsapp && message) {
+          showPopup();
+      }
+      return false; // Prevent form submission for demo
+  }
+
+  // Show popup function
+  function showPopup() {
+      document.getElementById("popup").style.display = "block";
+      document.getElementById("overlay").style.display = "block";
+  }
+
+  // Close popup function
+  function closePopup() {
+      document.getElementById("popup").style.display = "none";
+      document.getElementById("overlay").style.display = "none";
+  }
+
+  // Navigation functions
+  function goToPreviousPage() {
+      window.location.href = "gallery.html"; // Replace with the actual URL of the previous page
+  }
+
+  function goToNextPage() {
+      window.location.href = "bookus.html"; // Replace with the actual URL of the next page
+  }
+</script>
+</body>
+</html>

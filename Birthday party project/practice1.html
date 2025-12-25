@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Birthday Planners</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d478a0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            background-color: #f178a1;
+        }
+        .footernav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .footernav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .footernav li {
+            margin: 10px;
+        }
+        .footernav a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+            border-radius: 5px;
+            background: linear-gradient(45deg, #E6DAC3, #C9E4CA);
+            transition: background 0.3s ease;
+        }
+        .footernav a:hover {
+            background: linear-gradient(45deg, #fa8e75, #9ae2c8);
+        }
+        @media (max-width: 768px) {
+            .footernav ul {
+                flex-direction: row;
+            }
+            .footernav li {
+                flex: 0 0 33%;
+                text-align: center;
+            }
+        }
+        @media (max-width: 480px) {
+            .footernav {
+                padding: 10px;
+            }
+            .footernav ul {
+                flex-direction: column;
+            }
+            .footernav li {
+                flex: 0 0 100%;
+                text-align: center;
+            }
+            .footernav a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <p>Copyright © 2024 Best Birthday planners</p>
+        <nav class="footernav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about us.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="bookus.html">Booking us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

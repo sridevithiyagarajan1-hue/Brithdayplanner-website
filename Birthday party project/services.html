@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Services</title>
+    
+  <link rel="stylesheet" href="SMC1.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .s-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #b1194c;
+        }
+        .service-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .service-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 300px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-card img {
+            width: 100%;
+            height: 90%;
+            border-radius: 10px 10px 0 0;
+        }
+        .service-card h3 {
+            margin: 10px;
+            text-align: center;
+        }
+        .animi {
+            font-size: 3rem;
+            text-align: center;
+            position: relative;
+            animation: slide 16s ease-in-out infinite;
+            color:rgba(160, 7, 83, 0.949)
+}
+
+/* Animation from right to left and then left to right */
+@keyframes slide {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    50% {
+        transform: translateX(-100%); /* Move off-screen to the left */
+    }
+    100% {
+        transform: translateX(100%); /* Move back to the starting position */
+    }
+}
+    </style>
+</head>
+<body>
+  <script src="SMC.JS"></script>
+    <header>
+        <div class="container-fluid">
+            <div class="logo">
+                <img src="logoSMC.jpeg" >
+            </div>
+
+            <!-- Hamburger icon for mobile -->
+            <button class="menu-toggle" aria-label="Main Menu" onclick="openNav()">&#9776;</button>
+            
+            <!-- Full navigation bar for larger screens -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="SMC.HTML">Home</a></li>
+                    <li><a href="about us.html">About us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="bookus.html">Booking us</a></li>
+                </ul>
+            </nav>
+        </div>
+            <!-- Side nav for mobile -->
+    <div id="sideNav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="logo-in-menu">
+          <img src="logoSMC.jpeg" alt="Logo">
+      </div>
+      <nav>
+          <ul>
+            <li><a href="SMC.HTML">Home</a></li>
+            <li><a href="about us.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="bookus.html">Booking us</a></li>
+          </ul>
+      </nav>
+  </div>
+  
+<div class="s-container">
+    <h1>Our Birthday Planning Services</h1>
+    <p class="animi"> "All services can be customized to meet your specific needs."
+    </p>
+    <div class="service-section">
+        <div class="service-card" onclick="location.href='venue-decoaration.html'">
+            <img src="beach1.jpeg" alt="Venue Decoration">
+            <h3>Venue Decoration</h3>
+        </div>
+        <div class="service-card" onclick="location.href='themes.html'">
+            <img src="customize.html.jpeg" alt="Themes">
+            <h3>Themes</h3>
+        </div>
+        <div class="service-card" onclick="location.href='invitations.html'">
+          <img src="card4.jpeg" alt="Invitations">
+          <h3>Invitations</h3>
+        </div>
+        <div class="service-card" onclick="location.href='eatable-counters.html'">
+            <img src="eating.html.jpeg" alt="Eatable Counters">
+            <h3>Eatable Counters</h3>
+        </div>
+        <div class="service-card" onclick="location.href='entertainment-shows.html'">
+            <img src="eshow.html.jpeg" alt="Entertainment Shows">
+            <h3>Entertainment Shows</h3>
+        </div>
+        <div class="service-card" onclick="location.href='return-gifts.html'">
+            <img src="Rcard1.jpeg" alt="Return Gifts & Bags">
+            <h3>Return Gifts</h3>
+        </div>
+      
+        </div>
+    </div>
+</div>
+<footer>
+  <p>Copyright © 2024 Best Birthday planners</p>
+  <nav class="footernav">
+    <ul>
+      <li><a href="SMC.HTML">Home</a></li>
+      <li><a href="about us.html">About us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="bookus.html">Booking us</a></li>
+    </ul>
+  </nav>
+  <h3>social media</h3>
+  <div class="social-icons">
+    <div class="icon instagram"></div>
+    <div class="icon whatsapp"></div>
+    <div class="icon facebook"></div>
+    <div class="icon youtube"></div>
+</div>
+</footer>
+</body>
+</html>
